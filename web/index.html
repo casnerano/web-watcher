@@ -22,56 +22,59 @@
         </ul>
     </header>
 
-    <table class="table table-striped table-hover">
-        <thead>
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">Хост</th>
-            <th scope="col" class="checkers-col">Чекеры</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>tanais.ru</td>
-            <td>
-                <select multiple="multiple">
-                    <option selected>ssl-cert</option>
-                    <option>domain-expired</option>
-                    <option selected>status-200</option>
-                    <option selected>sql-error</option>
-                    <option>php-error</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>pokolenie-nxt.ru</td>
-            <td>
-                <select multiple="multiple">
-                    <option selected>ssl-cert</option>
-                    <option>domain-expired</option>
-                    <option selected>status-200</option>
-                    <option>sql-error</option>
-                    <option>php-error</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>vegaproject.ru</td>
-            <td>
-                <select multiple="multiple">
-                    <option>ssl-cert</option>
-                    <option selected>domain-expired</option>
-                    <option selected>status-200</option>
-                    <option selected>sql-error</option>
-                    <option selected>php-error</option>
-                </select>
-            </td>
-        </tr>
-        </tbody>
-    </table>
+    <form action="">
+        <table class="table table-striped table-hover">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Хост</th>
+                <th scope="col" class="checkers-col">Чекеры</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>tanais.ru</td>
+                <td>
+                    <select name="sites[]" multiple="multiple">
+                        <option selected>ssl-cert</option>
+                        <option>domain-expired</option>
+                        <option selected>status-200</option>
+                        <option selected>sql-error</option>
+                        <option>php-error</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>pokolenie-nxt.ru</td>
+                <td>
+                    <select name="sites[]" multiple="multiple">
+                        <option selected>ssl-cert</option>
+                        <option>domain-expired</option>
+                        <option selected>status-200</option>
+                        <option>sql-error</option>
+                        <option>php-error</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>vegaproject.ru</td>
+                <td>
+                    <select name="sites[]" multiple="multiple">
+                        <option>ssl-cert</option>
+                        <option selected>domain-expired</option>
+                        <option selected>status-200</option>
+                        <option selected>sql-error</option>
+                        <option selected>php-error</option>
+                    </select>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <input type="submit" class="btn btn-outline-primary btn-md float-end" value="Сохранить" />
+    </form>
 </div>
 </body>
 </html>
