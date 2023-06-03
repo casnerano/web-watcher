@@ -1,0 +1,5 @@
+smtp:
+  host: mailhog
+  port: 1025
+  username: username
+  password: password

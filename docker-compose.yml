@@ -24,8 +24,6 @@ services:
       - POSTGRES_PASSWORD
       - POSTGRES_DB
     depends_on:
-      accrual:
-        condition: service_started
       rabbitmq:
         condition: service_healthy
 

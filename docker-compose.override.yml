@@ -9,6 +9,11 @@ services:
     ports:
       - '5432:5432'
 
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - '8025:8025'
+
   pgadmin:
     image: dpage/pgadmin4:latest
     container_name: pgadmin
