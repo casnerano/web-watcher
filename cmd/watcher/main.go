@@ -1,7 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+
+	"github.com/casnerano/web-watcher/internal/config"
+)
 
 func main() {
-	fmt.Println("Finished")
+	c, err := config.Load()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println(c)
 }
